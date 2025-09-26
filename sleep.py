@@ -23,7 +23,7 @@ label_encoder.classes_ = np.array(['Insomnia', 'Sleep Apnea', 'None'])  # Adjust
 st.sidebar.header("Enter Patient Details")
 
 # Numerical features
-age = st.sidebar.slider("Age", min_value=27, max_value=59, value=42)
+age = st.sidebar.slider("Age", min_value=10, max_value=59, value=42)
 sleep_duration = st.sidebar.slider("Sleep Duration (hours)", min_value=5.8, max_value=8.5, value=7.0, step=0.1)
 quality_of_sleep = st.sidebar.slider("Quality of Sleep (1-10)", min_value=1, max_value=10, value=7)
 physical_activity_level = st.sidebar.slider("Physical Activity Level (minutes/day)", min_value=30, max_value=90, value=60)
@@ -116,4 +116,5 @@ st.write("""
 2. Adjust the sliders for numerical features like Age, Sleep Duration, etc.
 3. Select appropriate options for Gender, Occupation, and BMI Category.
 4. Click the 'Predict' button to see the predicted sleep disorder.
+
 """)
